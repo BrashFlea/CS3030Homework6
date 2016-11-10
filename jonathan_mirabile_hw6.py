@@ -8,6 +8,8 @@
 import sys
 import urllib
 import urllib.request
+import re
+from collections import Counter
 """
 Apache Server Error Log Report Tool
 Args:
@@ -27,10 +29,18 @@ def fetch_url(url):
         A list of errors from the given document
     """
     resource = urllib.request.urlopen(url)
-    content = resource.read().decode('utf-8')
-    data = content.splitlines()
-    dlist = print('\n'.join('{}: {}'.format(*k) for k in enumerate(data)))
-    return dlist
+    content = resource.read().decode()
+    #Regex checks for 4 groups:
+    #1: []
+    #2: []
+    #3: []
+    #4: Rest of string
+    #Then ignores groups 1-3 and leaves group 4 (the verbose error) 
+    dlist = re.findall(r'(?:\[.*?\]) (?:\[.*?\]) (?:\[.*?\]) (.*)', content)
+    #Sort list and print out the nth most common
+    slist = Counter(dlist).most_common(5)
+    print(slist)
+    return
     
 
     
