@@ -1,0 +1,29 @@
+commit e573e26527fa3ed9dcc9ecaca63b1dcb64bb0c50
+Author: Jonathan Mirabile <jonathanmirabile@mail.weber.edu>
+Date:   Thu Nov 10 18:51:43 2016 -0700
+
+    Added report printing, help function, and command line argument handling. Test on Icarus and submit
+
+commit 876f9953ce08a71f6ea7e7f48f4390b928b7b432
+Author: Jonathan Mirabile <jonathanmirabile@mail.weber.edu>
+Date:   Thu Nov 10 13:53:51 2016 -0700
+
+    Created regex to handle data splitting. Need to output data as report
+
+commit 80550f477613c7fc29190c690665cd4046ccc0c8
+Author: Jonathan Mirabile <jonathanmirabile@mail.weber.edu>
+Date:   Tue Nov 8 23:21:23 2016 -0700
+
+    Created urlopen shell. Need to handle turning file content into dictionary
+
+commit c0edad5cafe087d0c34cfc19028727aaa6105151
+Author: Jonathan Mirabile <jonathanmirabile@mail.weber.edu>
+Date:   Sun Nov 6 23:35:40 2016 -0700
+
+    Updated readme
+
+commit 3798d0f181cc9fa51c00db38eb45b86bff141c90
+Author: Jonathan Mirabile <jonathanmirabile@mail.weber.edu>
+Date:   Thu Nov 3 13:20:57 2016 -0600
+
+    Initial commit
